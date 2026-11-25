@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An interactive learning path from marketing foundations to advanced business growth strategy.">
+  <meta name="theme-color" content="#101827"><title>Growth Academy — Business Marketing & Strategy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="#home"><span class="brand-mark">G</span><span>GROWTH<span class="muted">ACADEMY</span></span></a><div class="top-actions"><span class="course-label">BUSINESS MARKETING · FIELD GUIDE</span><button id="themeToggle" class="icon-btn" aria-label="Toggle theme">◐</button></div></header>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="side-heading">YOUR LEARNING PATH</div>
+      <div class="progress-card"><div class="progress-row"><span>Course progress</span><strong id="progressText">0%</strong></div><div class="progress-track"><span id="progressBar"></span></div><small id="progressDetail">0 of 18 lessons completed</small></div>
+      <label class="search-wrap"><span>⌕</span><input id="searchInput" placeholder="Search concepts, topics…" autocomplete="off"></label>
+      <nav id="moduleNav" aria-label="Course modules"></nav>
+      <div class="sidebar-bottom"><span class="live-dot"></span> SELF-PACED LEARNING <span class="version">V1.1</span></div>
+    </aside>
+    <main id="mainContent">
+      <section id="homeView" class="hero-view">
+        <div class="eyebrow"><span class="eyebrow-line"></span> THE COMPLETE GROWTH PLAYBOOK</div>
+        <h1>Think like a<br><em>growth strategist.</em></h1>
+        <p class="hero-copy">Understand the business, decode the market, earn customer trust, build a compelling offer, and turn insight into profitable growth. From first principles to expert practice.</p>
+        <div class="hero-actions"><button class="primary-btn" id="startLearning">Start learning <span>→</span></button><span class="meta-note">18 learning modules · Practical frameworks · Real-world application</span></div>
+        <div class="hero-stats"><div><strong>01—18</strong><span>LEARNING MODULES</span></div><div><strong>3</strong><span>SKILL LEVELS</span></div><div><strong>1</strong><span>CONNECTED GROWTH SYSTEM</span></div></div>
+        <div class="section-head"><div><div class="eyebrow">THE CURRICULUM</div><h2>A system, not a bag of tactics.</h2></div><p>Follow the sequence. Each layer builds on the one before it.</p></div>
+        <div id="moduleCards" class="module-grid"></div>
+        <div class="learning-note"><div class="note-icon">✳</div><div><strong>How to use this academy</strong><p>Read the concept, study the worked example, then complete the action checklist. Mark a lesson complete when you can explain the idea and apply it to a real business—not simply because you have read it.</p></div></div>
+      </section>
+      <section id="lessonView" class="lesson-view hidden"></section>
+      <section id="searchView" class="lesson-view hidden"></section>
+    </main>
+  </div>
+  <script src="content.js"></script><script src="app.js"></script>
+</body></html>
